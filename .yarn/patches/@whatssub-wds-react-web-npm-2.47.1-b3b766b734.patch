@@ -1,0 +1,41 @@
+diff --git a/dist/components/Providers/GlobalStylesProvider/GlobalStylesProvider.js b/dist/components/Providers/GlobalStylesProvider/GlobalStylesProvider.js
+index b56305a3f11e141a89096b78b01912884d773135..48beee1f627c625d324cb09740a6b6a67858d165 100644
+--- a/dist/components/Providers/GlobalStylesProvider/GlobalStylesProvider.js
++++ b/dist/components/Providers/GlobalStylesProvider/GlobalStylesProvider.js
+@@ -11,7 +11,6 @@ var recoil_1 = require("recoil");
+ var BreakpointProvider_1 = require("../BreakpointProvider");
+ var SpaceProvider_1 = require("../SpaceProvider");
+ var StyleConfigProvider_1 = require("../StyleConfigProvider");
+-var ThemeProvider_1 = require("../ThemeProvider");
+ var TypoProvider_1 = require("../TypoProvider");
+ var UtilityProvider_1 = require("../UtilityProvider");
+ /**
+@@ -22,8 +21,26 @@ var UtilityProvider_1 = require("../UtilityProvider");
+  * 항상 프로덕트의 최상단에 선언되어야 합니다.
+  */
+ var GlobalStyleProvider = function (_a) {
+-    var theme = _a.theme, breakpoint = _a.breakpoint, children = _a.children;
+-    return ((0, jsx_runtime_1.jsx)(recoil_1.RecoilRoot, { children: (0, jsx_runtime_1.jsx)(BreakpointProvider_1.BreakpointProvider, { breakpoint: breakpoint, children: (0, jsx_runtime_1.jsx)(ThemeProvider_1.ThemeProvider, { themeConfig: theme, children: (0, jsx_runtime_1.jsx)(StyleConfigProvider_1.StyleConfigProvider, { children: (0, jsx_runtime_1.jsx)(UtilityProvider_1.UtilityProvider, { children: (0, jsx_runtime_1.jsx)(SpaceProvider_1.SpaceProvider, { children: (0, jsx_runtime_1.jsx)(TypoProvider_1.TypoProvider, { children: children }) }) }) }) }) }) }));
++  var theme = _a.theme,
++    breakpoint = _a.breakpoint,
++    children = _a.children;
++  return (0, jsx_runtime_1.jsx)(recoil_1.RecoilRoot, {
++    children: (0, jsx_runtime_1.jsx)(BreakpointProvider_1.BreakpointProvider, {
++      breakpoint: breakpoint,
++      children: (0, jsx_runtime_1.jsx)(
++        StyleConfigProvider_1.StyleConfigProvider,
++        {
++          children: (0, jsx_runtime_1.jsx)(UtilityProvider_1.UtilityProvider, {
++            children: (0, jsx_runtime_1.jsx)(SpaceProvider_1.SpaceProvider, {
++              children: (0, jsx_runtime_1.jsx)(TypoProvider_1.TypoProvider, {
++                children: children,
++              }),
++            }),
++          }),
++        }
++      ),
++    }),
++  });
+ };
+ exports.default = GlobalStyleProvider;
+ //# sourceMappingURL=GlobalStylesProvider.js.map

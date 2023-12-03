@@ -1,0 +1,53 @@
+{
+  "name": "semantic-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@gdsc-yonsei/color": "0.0.26",
+    "@studio-freight/react-lenis": "^0.0.38",
+    "@whatssub/wds-react-web": "2.47.1",
+    "classnames": "^2.3.2",
+    "js-cookie": "^3.0.5",
+    "react": "^18.2.0",
+    "react-countup": "^6.5.0",
+    "react-dom": "^18.2.0",
+    "react-highlight": "^0.15.0",
+    "recoil": "^0.7.7",
+    "styled-components": "^5.3.11",
+    "styled-reset": "^4.5.1",
+    "wonderful-tools": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/react-highlight": "^0.12.8",
+    "@types/styled-components": "^5.1.32",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "babel-plugin-styled-components": "^2.1.4",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-chunk-split": "^0.5.0",
+    "vite-plugin-minify": "^1.5.2",
+    "vite-plugin-react": "^4.0.1",
+    "vite-plugin-svgr": "^4.2.0",
+    "vite-tsconfig-paths": "^4.2.1"
+  },
+  "packageManager": "yarn@3.6.3",
+  "resolutions": {
+    "@whatssub/wds-react-web@^2.47.1": "patch:@whatssub/wds-react-web@npm%3A2.47.1%3A%3A__archiveUrl=https%253A%252F%252Fnpm.pkg.github.com%252Fdownload%252F%2540whatssub%252Fwds-react-web%252F2.47.1%252F24d3e8a2d4c735570a42015e108a01ca76932b73#./.yarn/patches/@whatssub-wds-react-web-npm-2.47.1-b3b766b734.patch"
+  }
+}
