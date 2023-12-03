@@ -1,4 +1,4 @@
-import { og_image } from "@/assets";
+import { android_frame, og_image } from "@/assets";
 import { useSemanticColor } from "@gdsc-yonsei/color";
 import {
   ButtonFrame,
@@ -15,6 +15,9 @@ const DeviceMockupSecond = () => {
   const { busy } = useScreen();
 
   const styles = createStyleSheet({
+    container: {
+      backgroundImage: `url(${android_frame})`,
+    },
     background: {
       padding: "4px 8px",
       borderRadius: "8px",
@@ -25,7 +28,7 @@ const DeviceMockupSecond = () => {
   });
 
   return (
-    <DeviceMockupSecondContainer>
+    <DeviceMockupSecondContainer style={styles.container}>
       <ScreenContainer>
         <ViewportContainer>
           <NavigationBar>
@@ -161,7 +164,6 @@ const DeviceMockupSecondContainer = styled.figure`
   width: 273px;
   height: 580px;
 
-  background-image: url("/android_frame.png");
   object-fit: cover;
   background-size: contain;
 `;
