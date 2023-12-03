@@ -7,6 +7,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/semantic-demo/",
   optimizeDeps: {
     include: ["@whatssub/wds-react-web"],
     force: true,
