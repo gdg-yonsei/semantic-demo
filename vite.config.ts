@@ -1,6 +1,5 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
-import { chunkSplitPlugin } from "vite-plugin-chunk-split";
 import { ViteMinifyPlugin } from "vite-plugin-minify";
 import svgr from "vite-plugin-svgr";
 import tsconfigPaths from "vite-tsconfig-paths";
@@ -22,7 +21,6 @@ export default defineConfig({
       include: "**/*.svg",
     }),
     tsconfigPaths(),
-    chunkSplitPlugin(),
   ],
   envDir: "./env",
   build: {
