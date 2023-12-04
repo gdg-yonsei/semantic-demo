@@ -18,7 +18,13 @@ const FooterSection = () => {
         link={
           "https://www.figma.com/file/wFwdtlpxKDz3CUCyx8cJIJ/GDSC-Yonsei---Semantic-Color-System?type=design&node-id=93%3A1497&mode=design&t=l7INFqTGfU0nESk9-1"
         }
-        leftLabel={"Semantic Color - Figma"}
+        leftLabel={"Semantic Color - Figma Page"}
+      />
+      <FooterRowItem
+        link={
+          "https://www.figma.com/community/file/1307998088033214699/gdsc-yonsei-semantic-color-system"
+        }
+        leftLabel={"GDSC-YS Figma Community"}
       />
       <FooterRowItem
         link={

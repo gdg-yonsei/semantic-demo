@@ -26,7 +26,7 @@ export default FooterRowItem;
 
 const FooterRowItemContainer = styled.a`
   width: 100%;
-  height: 100px;
+  height: 90px;
   padding: 0 32px;
 
   position: relative;
